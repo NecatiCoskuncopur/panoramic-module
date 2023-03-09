@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Web site created using create-react-app" />
+  <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="/bundles/dpxadmin/assets/css/bootstrap.min.css">
+  <link href="/bundles/dpxadmin/assets/libs/datatables/responsive.bootstrap4.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://tisas.90pixel.net/bundles/dpxadmin/assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://tisas.90pixel.net/bundles/dpxadmin/assets/css/icons.min.css" />
+  <link href="https://tisas.90pixel.net/bundles/dpxadmin/assets/libs/datatables/responsive.bootstrap4.css"
+    rel="stylesheet" type="text/css" />
+  <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+  <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+  <link href="https://coderthemes.com/adminto/layouts/vertical/assets/css/app.min.css" rel="stylesheet"
+    type="text/css" />
+  <link href="https://coderthemes.com/adminto/layouts/vertical/assets/css/bootstrap.min.css" rel="stylesheet"
+    type="text/css" />
+  <script src="https://kit.fontawesome.com/85a2e236af.js" crossorigin="anonymous"></script>
+  <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Gallery Module</title>
+  <script>
+    var content = "";
+    var baseUrl = "https://tisas.90pixel.net/";
+    // var content = '{"items":[{"header":{},"id":388,"type":"Images","selectedImage":{"id":1251,"mediaId":1251,"mediaType":"photo","fileName":"60af5ccbca32b.jpg","name":"el fergani.jpg","thumbnailFullUrl":"https://cdn.tua.gov.tr/thumbnail-60af5ccbca32b.jpg","fileFullUrl":"https://cdn.tua.gov.tr/60af5ccbca32b.jpg","thumbnail":"https://cdn.tua.gov.tr/thumbnail-60af5ccbca32b.jpg","description":null}}]}'
+    var token =
+      'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpYXQiOjE2NzgzMTUyNzAsImV4cCI6MTY3ODM1MTI3MCwicm9sZXMiOnsiMSI6IlJPTEVfU1VQRVJfQURNSU4iLCIyIjoiUk9MRV9BRE1JTiJ9LCJ1c2VybmFtZSI6ImFkbWluIn0.ZIscqJhMSvP7F8czxCGuZjLZ1Pju0OLtRfyi5pOs68igVC6cPqeW5k2o_LnrMHEqPJXVvZXHmLiXzqBJ-SY7ZzHDKRDY_400NQRxDWACvdMx6oc6-C-tft60V9k2vT3jVO4qR4dYgSJcC0UMXijVBnIQE5cxPYzbAl-KVJ80HbVDjJ7EpVrm9W8hD-bexq_9i7mJxC0-OfKMauFaEyREKcH8GsfjPpz3sCfhV05Cmy1n5Sxfi9sa8GSqhCy-rV582SruWWM9P5ULRRhDEKmrzl9SAycltINQjTFgWu6HdqE_ArrC0hqOoKunS4Xus-tWEh55s1WNk6q0BR90CvS-RA';
+    var extensions = [
+      {
+        photo: ["jpeg", "png", "jpg", "gif"],
+      },
+    ];
+  </script>
+</head>
+
+<body>
+  <noscript>You need to enable JavaScript to run this app.</noscript>
+  <div id="gallery-module"></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+  <script src="https://cms.tua.gov.tr/bundles/fosckeditor/ckeditor.js"></script>
+  <script src="https://kit.fontawesome.com/85a2e236af.js" crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    CKEDITOR.plugins.addExternal(
+      "ckawesome",
+      "https://cms.tua.gov.tr/bundles/dpxadmin/ckeditor/ckawesome/",
+      "plugin.js"
+    );
+  </script>
+</body>
+
+</html>
