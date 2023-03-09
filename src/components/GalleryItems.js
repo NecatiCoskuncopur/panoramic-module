@@ -28,7 +28,7 @@ const GalleryItems = ({ items, removeItem }) => {
               </td>
               <td>{item.name}</td>
               <td>
-                <button>
+                <button onClick={removeItem(item.id)}>
                   <i className="fa fa-trash"></i>
                 </button>
               </td>
